@@ -12,7 +12,7 @@ const ProductList = ({ products }) => (
 ProductList.propTypes = {
 	products:PropTypes.arrayOf(PropTypes.shape({
 		id: PropTypes.number.isRequired,
-		product: PropTypes.string.isRequired
+		product: PropTypes.object.isRequired
 	})).isRequired
 }
 

@@ -4,15 +4,15 @@ import { setCategory } from '../actions'
 
 let SetCategory = ({dispatch}) => {
 	return (
-		<select onChange={e => {
+		<select className='set-category' onChange={e => {
 			e.preventDefault()
 			console.log(e.target.value)
-			dispatch(setCategory(0))
+			dispatch(setCategory(e.target.value))
 		}}>
-			<option value='phones'>Phones</option>
-			<option value='computers'>Computers</option>
-			<option value='power-banks'>Power Banks</option>
-			<option value='memory-cards'>Memory Cards</option>
+			<option value='0'>Phones</option>
+			<option value='1'>Computers</option>
+			<option value='2'>Power Banks</option>
+			<option value='3'>Memory Cards</option>
 		</select>
 	)
 }

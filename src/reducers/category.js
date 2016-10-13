@@ -1,6 +1,7 @@
 let cats = [
 	{
 		name: 'phones',
+		id: 0,
 		type: 'category',
 		options: [
 			{
@@ -70,6 +71,7 @@ let cats = [
 	},
 	{
 		name: 'computers',
+		id: 1,
 		type: 'category',
 		options: [
 			{
@@ -153,6 +155,7 @@ let cats = [
 	},
 	{
 		name: 'power-banks',
+		id: 2,
 		type: 'category',
 		options: [
 			{
@@ -190,6 +193,7 @@ let cats = [
 	},
 	{
 		name: 'memory-cards',
+		id: 3,
 		type: 'category',
 		options: [
 			{

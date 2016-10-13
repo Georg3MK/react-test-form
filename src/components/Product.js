@@ -4,14 +4,14 @@ import RemoveButton from '../containers/RemoveButton'
 const Product = ({ product, id }) => (
 	<li>
 		<div className='product'>
-			{product}
+			{product.model}
 		</div>
 		<RemoveButton id={id} />
 	</li>
 )
 
 Product.propTypes = {
-	product: PropTypes.string.isRequired
+	product: PropTypes.object.isRequired
 }
 
 export default Product

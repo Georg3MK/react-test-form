@@ -6,8 +6,8 @@ import ShownProducts from '../containers/ShownProducts'
 const App = () => (
 	<div>
 		<h1>Let's add some gooods to our store!</h1>
-		<AddForm />
 		<SetCategory />
+		<AddForm />
 		<ShownProducts />
 	</div>
 )
