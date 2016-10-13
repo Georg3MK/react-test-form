@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="/public/styles/styles.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 1.025em;
+            font-family: sans-serif;
+        }
+        h1 {
+            font-size: 2em;
+            margin:0 0 1em 0;
+            color: lightslategrey;
+        }
+        input {
+            padding:0.5em;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        input, select, textarea {
+            display: block;
+            margin:0 0 0.5em 0;
+        }
+        #root {
+            margin:2em 5%;
+        }
+        .products-list {
+            list-style-type: square;
+            margin:1em;
+        }
+        .products-list > li {
+            width:50%;
+            margin:0.5em 0;
+
+        }
+        .products-list > li > div,
+        .products-list > li > input {
+            display: inline-block;
+        }
+        .products-list > li > div {
+            width:70%;
+            padding: 0.25em 0;
+            border-bottom: 1px solid grey;
+        }
+        .products-list > li > input {
+            width:30%;
+        }
+        .new {
+            margin-left: 2em;
+            color: green;
+            font-weight: bold;
+        }
+        .none {
+            display: none!important;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+    <div id="root">
+    </div>
+    <script src="/public/bundle.js"></script>
+</body>
+</html>

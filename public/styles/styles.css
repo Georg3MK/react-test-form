@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.025em;
+  font-family: sans-serif;
+}
+.new {
+  margin-left: 2em;
+  color: green;
+  font-weight: bold;
+}
+.none {
+  display: none!important;
+}
