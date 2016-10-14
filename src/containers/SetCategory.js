@@ -6,7 +6,6 @@ let SetCategory = ({dispatch}) => {
 	return (
 		<select className='set-category' onChange={e => {
 			e.preventDefault()
-			console.log(e.target.value)
 			dispatch(setCategory(e.target.value))
 		}}>
 			<option value='0'>Phones</option>

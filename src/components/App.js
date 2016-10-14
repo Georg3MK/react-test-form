@@ -11,5 +11,6 @@ const App = () => (
 		<ShownProducts />
 	</div>
 )
-
 export default App
+
+

@@ -10,20 +10,29 @@
             font-size: 1.025em;
             font-family: sans-serif;
         }
+        h1, h2, h3 {
+            margin:0 0 1em 0;
+        }
         h1 {
             font-size: 2em;
-            margin:0 0 1em 0;
             color: lightslategrey;
         }
-        input {
-            padding:0.5em;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
+        h2 {
+            font-size: 1.5em;
+            color: grey;
+        }
+        h3 {
+            font-size: 1.25em;
+            color: grey;
+            text-transform: uppercase;
         }
         input, select, textarea {
             display: block;
             margin:0 0 0.5em 0;
+            padding:0.5em;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
         }
         #root {
             margin:2em 5%;
@@ -32,21 +41,42 @@
             width:25%;
             padding:0.5em;
         }
+        form.add-product {
+            border-bottom: 1px solid black;
+        }
         form.add-product > div{
+            float:left;
             width: 47.5%;
             margin: 1em 0 1em 2.5%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
         }
         form.add-product > div:first-child{
             margin: 1em 2.5% 1em 0;
+            border-right:1px solid grey;
+        }
+        form.add-product > input[type='submit'] {
+            clear:both;
+        }
+        form.add-product .options-block {
+            margin:0 0 1em 0;
+            padding:0.5em;
+            border:1px solid grey;
+        }
+        li {
+            list-style-type: none;
         }
         .products-list {
-            list-style-type: square;
-            margin:1em;
+            margin:1em 0;
         }
         .products-list > li {
-            width:50%;
-            margin:0.5em 0;
-
+            display:inline-block;
+            width:47.5%;
+            margin:0.5em 2.5% 0.5em 0;
+        }
+        .products-list > li:nth-child(even) {
+            margin:0.5em 0 0.5em 2.5%;
         }
         .products-list > li > div,
         .products-list > li > input {

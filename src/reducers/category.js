@@ -149,7 +149,7 @@ let cats = [
 			}, {
 				name: 'HDD',
 				type: 'field',
-				options: '2Tb'
+				placeholder: '2Tb'
 			}
 		]
 	},
@@ -202,8 +202,8 @@ let cats = [
 				placeholder: '64Gb'
 			},{
 				name: 'type',
-				type: 'field',
-				placeholder: 'microSD'
+				type: 'select',
+				opts: ['microSDXC', 'microSDHC', 'SDXC', 'SDHC']
 			},{
 				name: 'speed',
 				type: 'field',
